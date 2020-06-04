@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 0;
+  border-bottom:1px solid rgb(65, 64, 64) ;
+  nav {
+    ul{
+      display: flex;
+      justify-content: flex-end;
+      li {
+        list-style: none;
+        .active {
+          background: linear-gradient(90deg, #2bde8c 50%, #5ce865);
+          color: #fff;
+        }
+        a {
+          margin: 8px ;
+          display: inline-block;
+          background-color:transparent;
+          text-decoration: none;
+          padding: 8px 18px;
+          border-radius: 100px;
+          &:hover {
+            text-decoration: none;
+            background: linear-gradient(90deg, #2bde8c 50%, #5ce865);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
