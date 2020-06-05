@@ -6,6 +6,7 @@ import SignUp from './pages/authPage/SignUp';
 import SignIn from './pages/authPage/SignIn';
 import Experience from './pages/experience/Experience';
 import Help from './pages/help/Help';
+import SearchPage from './pages/searchPage/SearchPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/signup" component={SignUp} />
         <Route path="/experiences" component={Experience} />
         <Route path="/help" component={Help} />
+        <Route path="/search" component={SearchPage} />
       </Switch>
     </>
   );

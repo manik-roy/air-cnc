@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import CurrentDate from '../datePicker/CurrentDate';
+import { withRouter } from 'react-router-dom';
 
-const BookingFrom = () => {
+const BookingFrom = props => {
 
   const getDate = () => {
     var date = new Date();
@@ -81,7 +82,7 @@ const BookingFrom = () => {
       <div className="location-search">
         <div className="input-item shadow">
           <label htmlFor="location">location</label>
-          <input onChange={onChangeHandler} type="text"  value={location} name="location" className="location" placeholder="Add city, Landmark or address" />
+          <input onChange={onChangeHandler} type="text" value={location} name="location" className="location" placeholder="Add city, Landmark or address" />
         </div>
       </div>
       <div className="date-picker-wrapper">
@@ -104,10 +105,10 @@ const BookingFrom = () => {
         <div className="input-item">
           <div className="input-heading">
             <span>Guests</span>
-            <h6> 
-              { adults ? `${adults} adults, ` :' '} 
-              { child ? `${child} child, ` :' '}
-              { baby ? `${baby} baby` :' '}</h6>
+            <h6>
+              {adults ? `${adults} adults, ` : ' '}
+              {child ? `${child} child, ` : ' '}
+              {baby ? `${baby} baby` : ' '}</h6>
           </div>
           <div className="item-option mb-3">
             <p>Adults</p>
@@ -148,9 +149,11 @@ const BookingFrom = () => {
           <button className="apply">Apply</button>
         </div>
       </div>
-      <button className="search" type="submit"><span><i className="fas fa-search"></i></span> Search</button>
+      <button className="search"
+        onClick={() => props.history.push('/search')}
+        type="submit"><span><i className="fas fa-search"></i></span> Search</button>
     </form>
   );
 };
 
-export default BookingFrom;
+export default withRouter(BookingFrom);
