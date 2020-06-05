@@ -1,0 +1,18 @@
+.inputItem {
+  margin: 20px auto;
+  display: block;
+  width: 45%;
+  padding: 15px 0 10px 15px;
+  border-radius: 10px;
+  input {
+    border: none;
+    display: block;
+    width: 100%;
+    margin-top: -10px;
+    border: none;
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+}
