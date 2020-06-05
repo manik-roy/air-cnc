@@ -12,8 +12,6 @@ const BookingFrom = () => {
   const [arrivalDate, setArrivalDate] = useState(new Date());
   const [departureDate, setDepartureDate] = useState(getDate());
 
-
-
   const [guests, setGuests] = useState({
     adults: 1,
     child: 1,
@@ -26,8 +24,6 @@ const BookingFrom = () => {
 
   const onChangeHandler = e => {
     setGuests({ ...guests, [e.target.name]: e.target.value })
-    console.log(guests);
-
   }
 
   const dateHandler = (date, type) => {

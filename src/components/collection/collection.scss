@@ -1,3 +1,17 @@
+.items {
+  position: relative;
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin-bottom: 0rem;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    cursor: pointer;
+  }
+}
+}
 .card-container{
   display: flex;
   flex: 1 1 0px;
@@ -12,6 +26,11 @@
   h3 {
     font-size: 18px;
     font-weight: 600;
+  }
+  h6 {
+    margin-bottom: 0rem;
+    font-size: 14px;
+    font-weight: 400;
   }
   img{
     height: 100%;
