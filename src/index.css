@@ -16,3 +16,25 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.nice-dates-popover {
+  max-width: 450px !important;
+  position: fixed !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+label.dv-star-rating-star.dv-star-rating-full-star {
+  font-size: 24px;
+}
+
+label.dv-star-rating-empty-star>i {
+  font-size: 24px !important;
+}
+
+.raging p {
+  padding-top: 10px;
+  padding-left: 5px;
+}

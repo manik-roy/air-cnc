@@ -5,20 +5,107 @@
 }
 .booking-area {
   width: 30%;
-  margin-right: 5%;
+  padding-top: 50px;
+  margin-right: 3%;
   .input-item {
     padding: 15px;
+    padding-left: 11px;
   }
   .location {
     width: 80%;
     display: block;
     border: none;
-
     &:focus {
       border: none;
       outline: 0;
     }
   }
+  .date-picker-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input {
+    border: none;
+    &:focus {
+      border: none;
+      outline: 0;
+    }
+  }
+  .dateInput  {
+    position: relative;
+    flex-flow: column;
+    margin-top: 20px;
+    padding: 15px 0px 15px 11px;;
+    p{
+      margin-bottom: 0rem;
+    }
+    .input-date {
+      input {
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .calender {
+        position: absolute;
+        right: 25px;
+        top: 30px;
+      }
+    }
+
+  }
+  .booking-from {
+    padding: 15px 0 50px 2px;
+    .input-heading {
+      border-bottom:1px solid rgb(31, 28, 28);
+      margin-bottom: 15px;
+    }
+    .item-option {
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-weight: 600;
+        text-transform: uppercase;
+        span{
+          display: block;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      .btn-action {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        .decrement, .increment {
+          cursor: pointer;
+        }
+        span {
+          width: 20%;
+          text-align: center;
+        }
+      }
+    }
+    .apply {
+      background: none;
+    border: 2px solid #4ae474;
+    color: #2bde8c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    float: right;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    }
+
+  }
+  .search {
+    width: 100%;
+  background-image: linear-gradient(90deg , #2bde8c, #51e66d);
+  border: navajowhite;
+  padding: 14px 0;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 15px;
+  }
+
 }
 .items-wrapper {
   width: 70%;
