@@ -1,0 +1,31 @@
+.home-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.booking-area {
+  width: 30%;
+  margin-right: 5%;
+  .input-item {
+    padding: 15px;
+  }
+  .location {
+    width: 80%;
+    display: block;
+    border: none;
+
+    &:focus {
+      border: none;
+      outline: 0;
+    }
+  }
+}
+.items-wrapper {
+  width: 70%;
+  &:first-child {
+    padding: 10px 0;
+  }
+  .items{
+    padding: 50px 0 0 0;
+  }
+}
