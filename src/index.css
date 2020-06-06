@@ -19,7 +19,8 @@ a:hover {
 
 .nice-dates-popover {
   max-width: 450px !important;
-  position: fixed !important;
+  /* position: fixed !important; */
+  width: 250px !important;
 }
 
 button:focus {

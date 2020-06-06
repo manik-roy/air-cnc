@@ -19,6 +19,13 @@
   .img-container{
     height: 150px;
     margin-bottom: 5px;
+    transition: all .5s;
+    &:hover {
+     transform: scale(1.10);
+     img {
+      border-radius: 5px;
+     }
+    }
   }
   h4 {
     font-size: 13px;
@@ -35,11 +42,17 @@
   img{
     height: 100%;
     width: 100%;
+    transition: all .5s;
     object-fit: cover;
   }
   .card-item{
    flex-grow: 1;
    padding: 5px;
+   .text-content {
+     h3 {
+       cursor: pointer;
+     }
+   }
    &:first-child{
      padding-left: 0;
    }

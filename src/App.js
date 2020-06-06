@@ -7,6 +7,7 @@ import SignIn from './pages/authPage/SignIn';
 import Experience from './pages/experience/Experience';
 import Help from './pages/help/Help';
 import SearchPage from './pages/searchPage/SearchPage';
+import Details from './pages/details/Details';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/experiences" component={Experience} />
         <Route path="/help" component={Help} />
         <Route path="/search" component={SearchPage} />
+        <Route path="/details/:id" component={Details} />
       </Switch>
     </>
   );

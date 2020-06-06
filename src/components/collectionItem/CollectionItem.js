@@ -1,7 +1,8 @@
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
+import { withRouter } from 'react-router-dom';
 
-const CollectionItem = ({ data }) => {
+const CollectionItem = ({ history, data }) => {
   const { imageUrl, name, title, rating, totalReview, price } = data;
   return (
     <div className="card-item" style={{ width: 0 }}>
@@ -9,8 +10,8 @@ const CollectionItem = ({ data }) => {
         <img className="w-100" src={imageUrl} alt="" />
       </div >
       <div className="text-content">
-        <h4>{name}</h4>
-        <h3>{title}</h3>
+        <h4  >{name}</h4>
+        <h3 onClick={() => history.push('/details/1234')}>{title}</h3>
         <h6> $ {price} per person</h6>
         <span className="d-flex align-items-center raging"><StarRatingComponent
           name="rate1"
@@ -22,4 +23,4 @@ const CollectionItem = ({ data }) => {
   );
 };
 
-export default CollectionItem;
+export default withRouter(CollectionItem);
